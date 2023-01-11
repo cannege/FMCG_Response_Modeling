@@ -266,14 +266,6 @@ LEFT JOIN customer_response_temp USING(individualnumber)
 JOIN customeraccount_temp USING(individualnumber)
 WHERE response IS NOT NULL);
 
--- Update Gender to 1,0 
-UPDATE customer_response_final 
-SET gender = 1 
-WHERE gender = 'Female';
-
-UPDATE customer_response_final
-SET gender = 0 
-WHERE gender = 'Male';
 
 
 
