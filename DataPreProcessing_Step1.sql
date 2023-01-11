@@ -257,6 +257,7 @@ FROM transaction_header th
 JOIN customer_account c ON c.cardnumber = th.cardnumber 
 GROUP BY individualnumber);
 
+
 -- Merge all three tables by individualnumber. -- customer_response_final
 CREATE TABLE customer_response_final(
 SELECT 
